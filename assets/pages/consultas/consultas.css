@@ -4,17 +4,17 @@
     align-items: center;
     justify-content: space-between;
     margin: 40px 10vw 0 10vw;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
 }
 
 .logo-image{
-    width: 175px;
-    height: 78px;
+    width: 135px;
+    height: 61px;
 }
 
 .navbar-indexes {
     display: flex;
-    padding-top: 1em;
+    padding-top: .6em;
 }
 
 .navbar-indexes-list {
@@ -31,7 +31,7 @@
     color: #000000;
     font-weight: 500;
     transition: 0.4s;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .navbar-socialmedia {
@@ -81,53 +81,112 @@
     margin: 0 auto;
 }
 
-.bloco-consultas{
-    margin: 7em 10em;
+.overview{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 5em;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1em 2em;
+    gap: 1.3em;
+    border: 2px solid #f42d2d;
+    border-radius: 24px;
+    width: 50vw;
+    margin: 1.5em auto;
+    text-align: left;
+    transition: .3s ease;
 }
 
-.a1{
-    width: 20em;
-    height: 10em;
-    background-color: black;
-    border-radius: 8px;
+.overview:hover{
+    box-shadow: 1px 1px 20px -5px #f42d2d;
 }
 
-.a2{
-    width: 20em;
-    height: 10em;
-    background-color: rgb(199, 15, 15);
-    border-radius: 8px;
+.overview h3{
+    font-size: 24px;
 }
 
-.a3{
-    width: 20em;
-    height: 10em;
-    background-color: rgb(142, 226, 100);
-    border-radius: 8px;
+.overview h5{
+    font-size: 13px;
+    font-weight: 400;
 }
 
-.a4{
-    width: 20em;
-    height: 10em;
-    background-color: rgb(19, 26, 226);
-    border-radius: 8px;
+.dado-1, .dado-2{
+    background-color: #ececec;
+    width: 17vw;
+    height: 17vh;
+    border-radius: 21px;
 }
 
-.a5{
-    width: 20em;
-    height: 10em;
-    background-color: rgb(249, 141, 1);
-    border-radius: 8px;
+.categorias{
+    padding-top: 3em;
+    text-align: center;
 }
 
-.a6{
+.categorias h4{
+    font-size: 22px;
+    color: #f42d2d;
+    font-weight: 500;
+}
+
+.categorias h1{
+    font-size: 39px;
+    margin-top: -.3em;
+    color: #333333;
+}
+
+.consulta-select{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin: 3em auto;
+    align-items: center;
+    justify-items:center;
+}
+
+.select-aluno, .select-disciplina, .select-historico{
+    background-color: #26262a;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
     width: 20em;
-    height: 10em;
-    background-color: rgb(232, 53, 208);
-    border-radius: 8px;
+    height: 14em;
+    box-shadow: 1px 1px 20px -5px #f42d2d;
+    padding: 1.5em;
+    transition: 0.2s ease;
+}
+
+.select-aluno h2, .select-disciplina h2, .select-historico h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.select-aluno span, .select-disciplina span, .select-historico span{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.select-aluno:hover, .select-disciplina:hover, .select-historico:hover{
+    opacity: 0.8;
+}
+
+.ver-mais{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: auto;
+}
+
+.ver-mais-text{
+    color: #ffffff;
+    align-items: center;
+    bottom: 0;
+    text-decoration: none;
+    align-self: end;
+}
+
+.ver-mais-icon{
+    color: #f42d2d;
+    text-decoration: none;
+    font-size: 20px;
 }

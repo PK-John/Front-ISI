@@ -1,0 +1,151 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 10vw 0 10vw;
+    padding-bottom: 15px;
+}
+
+.logo-image{
+    width: 135px;
+    height: 61px;
+}
+
+.navbar-indexes {
+    display: flex;
+    padding-top: .6em;
+}
+
+.navbar-indexes-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 5px 30px;
+    list-style: none;
+}
+
+.navbar-indexes-list a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: 0.4s;
+    font-size: 17px;
+}
+
+.navbar-socialmedia {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-socialmedia a {
+    display: inline-flex;
+    gap: 10px;
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+    align-items: center;
+    transition: 0.4s;  
+}
+
+.navbar-indexes-list a:hover, .navbar-socialmedia a:hover {
+    color: #f42d2d;
+}
+
+.name-port { 
+    text-align: center;
+}
+
+.name-port-title {
+    position: relative;
+}
+
+.name-port-title p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 0 10px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+.name-port-title p::after{
+    position: absolute;
+    border-top: 2px solid #f42d2d;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    margin: 0 auto;
+}
+
+.pesquisa-aluno{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.5em auto;
+    align-items: center;
+}
+
+.pesquisa-aluno h3{
+    color: #f42d2d;
+    font-size: 20px;
+}
+
+.pesquisa-aluno h1{
+    color: #333333;
+    font-size: 35px;
+    margin-top: -.3em;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    max-width: 300px;
+    margin: 2em auto;
+    position: relative;
+}
+
+.icon-container {
+    position: absolute;
+    left: 10px;
+    top: 55.5%;
+    transform: translateY(-50%);
+}
+  
+.input {
+    width: 20vw;
+    height: 40px;
+    line-height: 14px;
+    padding-left: 2.5rem;
+    padding-right: 1em;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    box-shadow: 1px 1px 17px -11px #000000;
+    transition: 0.3s ease;
+}
+  
+.input::placeholder {
+    color: #9e9ea7;
+}
+  
+.input:focus, input:hover {
+    outline: none;
+    border-color: #f42d2d;
+    background-color: #fff;
+    box-shadow: 0 0 15px -4px #f42d2d;
+}
+  
+.icon {
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+  

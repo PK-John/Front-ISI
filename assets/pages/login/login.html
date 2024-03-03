@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/pages/login/login.css">
     <title>ISI</title>
-
 </head>
 <body>
+    <section>
+        <header>
+            <div class="header"></div>
+        </header>
+    </section>
     <section>
         <div class="login-image">
             <a href="/assets/pages/login/login.html">
@@ -20,17 +24,25 @@
     <div class="login-control">
         <section class="login">
             <div class="login-presentation">
-                <h2>Bem Vindo!</h2>
+                <div class="login-text">
+                    <h2>Bem Vindo(a) de volta!</h2>
+                    <h1>Login</h1>
+                </div>
                 <form class="login-form">
-                   <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
-                   <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="0123456789" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="••••••••" required>
+                    <a href="#">Esqueci a senha</a>
                 </form>
-                <button class="learn-more" type="submit">
+                <a href="/assets/pages/consultas/consultas.html">
+                    <button class="learn-more" type="submit">
                     <span class="circle" aria-hidden="true">
                       <span class="icon arrow"></span>
                     </span>
                     <span class="button-text">Entrar</span>
-                  </button>
+                    </button>
+                </a>
             </div>
         </section>
     </div>
