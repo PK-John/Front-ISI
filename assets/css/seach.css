@@ -115,14 +115,14 @@
     top: 55.5%;
     transform: translateY(-50%);
 }
-  
+
 .input {
-    width: 20vw;
+    width: 15vw;
     height: 40px;
     line-height: 14px;
     padding-left: 2.5rem;
     padding-right: 1em;
-    border: 2px solid transparent;
+    border: 2px solid #9e9ea7;
     border-radius: 16px;
     outline: none;
     background-color: #f3f3f4;
@@ -149,3 +149,28 @@
     height: 1rem;
 }
   
+.aluno-container, .disciplina-container {
+    text-align: center;
+    margin: 2em auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.aluno-info, .disciplina-info {
+    margin-top: 10px;
+}
+
+.aluno-info h2, .disciplina-info h2 {
+    color: #333;
+}
+
+.aluno-info ul, .disciplina-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aluno-info li, .disciplina-info li {
+    margin-bottom: 10px;
+}

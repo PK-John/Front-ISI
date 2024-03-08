@@ -100,11 +100,11 @@
 }
 
 .overview h3{
-    font-size: 24px;
+    font-size: 1.35vw;
 }
 
 .overview h5{
-    font-size: 13px;
+    font-size: 0.7vw;
     font-weight: 400;
 }
 
@@ -149,7 +149,7 @@
     border-radius: 20px;
     width: 20em;
     height: 14em;
-    box-shadow: 1px 1px 20px -5px #f42d2d;
+    box-shadow: 1px 1px 20px -7px #f42d2d;
     padding: 1.5em;
     transition: 0.2s ease;
 }
