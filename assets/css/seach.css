@@ -149,7 +149,7 @@
     height: 1rem;
 }
   
-.aluno-container, .disciplina-container {
+.aluno-container, .disciplina-container, .historico-container {
     text-align: center;
     margin: 2em auto;
     padding: 20px;
@@ -158,19 +158,19 @@
     max-width: 400px;
 }
 
-.aluno-info, .disciplina-info {
+.aluno-info, .disciplina-info, .historico-info {
     margin-top: 10px;
 }
 
-.aluno-info h2, .disciplina-info h2 {
+.aluno-info h2, .disciplina-info h2, .historico-info h2 {
     color: #333;
 }
 
-.aluno-info ul, .disciplina-info ul {
+.aluno-info ul, .disciplina-info ul, .historico-info ul {
     list-style: none;
     padding: 0;
 }
 
-.aluno-info li, .disciplina-info li {
+.aluno-info li, .disciplina-info li, .historico-info li {
     margin-bottom: 10px;
 }
