@@ -1,38 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const baseUrl = "http://localhost:5000/disciplinas/";
+    const baseUrl = "http://localhost:5000/alunos/";
 
-    function updateH1WithDisciplinaData(disciplinaData) {
-        const h1Element = document.getElementById('disciplinaInfo');
-        if (h1Element) {
-            const h2Element = document.createElement('h2');
-            h2Element.textContent = `Nome: ${disciplinaData.nome}`;
-            
-            const ulElement = document.createElement('ul');
-
-            for (const prop in disciplinaData) {
-                if (Object.prototype.hasOwnProperty.call(disciplinaData, prop) && prop !== 'nome') {
-                    const liElement = document.createElement('li');
-                    liElement.textContent = `${prop}: ${disciplinaData[prop]}`;
-                    ulElement.appendChild(liElement);
-                }
-            }
-
-            h1Element.innerHTML = '';  // Limpar o conteúdo anterior
-            h1Element.appendChild(h2Element);
-            h1Element.appendChild(ulElement);
-        } else {
-            console.error("Elemento h1 não encontrado.");
-        }
+    function redirectToAlunoPage(alunoId) {
+        const newPageUrl = `/assets/pages/disciplina/dados_disciplina.html?id=${alunoId}`;
+        window.location.href = newPageUrl;
     }
 
-    function getDisciplinaById(id) {
+    function getAlunoById(id) {
         const url = `${baseUrl}${id}`;
 
         axios
             .get(url)
             .then(response => {
-                const disciplinaData = response.data;
-                updateH1WithDisciplinaData(disciplinaData);
+                const alunoData = response.data;
+                redirectToAlunoPage(alunoData.id);
             })
             .catch(error => {
                 console.log(error);
@@ -41,21 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const searchForm = document.getElementById('searchForm');
-
     if (searchForm) {
         searchForm.addEventListener('submit', function (event) {
             event.preventDefault();
-            
-            const searchInput = document.getElementById('searchInput');
+            const searchValue = document.getElementById('searchInput').value;
 
-            if (searchInput) {
-                const searchValue = searchInput.value;
-
-                if (searchValue.trim() !== '') {
-                    getDisciplinaById(searchValue);
-                }
-            } else {
-                console.error("Elemento searchInput não encontrado.");
+            if (searchValue.trim() !== '') {
+                getAlunoById(searchValue);
             }
         });
     } else {
