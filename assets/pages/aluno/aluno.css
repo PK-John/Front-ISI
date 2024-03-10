@@ -1,0 +1,121 @@
+.geral-info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 4em;
+}
+
+.dado-aluno{
+    background-color: #fedbdb;
+    padding: 2em;
+    border-radius: 30px;
+    width: 24vw;
+    text-align: center;
+}
+
+.dado-aluno h3{
+    color: #f42d2d;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dado-aluno h1{
+    color: #333333;
+    font-size: 45px;
+    margin-top: -.3em;
+}
+
+.drop-info-aluno{
+    justify-self: center;
+}
+
+.aluno-info{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    border: 1px solid #f42d2d;
+    border-radius: 20px;
+    width: 55vw;
+    padding: 2em 1.5em;
+    gap: 20px;
+}
+
+.aluno-info h2{
+    color: #333333;
+    font-size: 25px;
+    margin-top: -.3em;
+}
+
+.aluno-info li{
+    list-style: none;
+}
+
+.geral-dado-aluno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.dado-aluno-1, .dado-aluno-2, .dado-aluno-3{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ececec;
+    width: 13vw;
+    height: 17vh;
+    border-radius: 21px;
+    padding: 1em;
+    justify-self: center;
+}
+
+.dado-aluno-1 span, .dado-aluno-2 span, .dado-aluno-3 span{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    margin: -.2em .2em;
+}
+
+.dado-aluno-1 p, .dado-aluno-2 p,.dado-aluno-3 p{
+    margin: -.5em .2em -5em;
+}
+
+.ball-1{
+    display: flex;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 10em;
+    background-color: #00e095;
+}
+
+.ball-2{
+    display: flex;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 100em;
+    background-color: #a162f7;
+}
+
+.ball-3{
+    display: flex;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 100em;
+    background-color: #fd2454;
+}
+
+.valores-text-1, .valores-text-2, .valores-text-3{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: .8em;
+}
+
+.alunoDetails{
+    padding-top: 1.5em;
+}
+
+.alunoDetails h2{
+    color: #333333;
+}
+
+.alunoDetails li{
+    list-style: none;
+}

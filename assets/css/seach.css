@@ -81,20 +81,29 @@
     margin: 0 auto;
 }
 
-.pesquisa-aluno{
+.pesquisa-aluno, .pesquisa-disciplina, .pesquisa-historico{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 1.5em auto;
+    justify-content: center;
     align-items: center;
+    height: 65vh;
 }
 
-.pesquisa-aluno h3{
+.text-search{
+    background-color: #fedbdb;
+    padding: 2.5em;
+    border-radius: 30px;
+    width: 20vw;
+}
+
+.pesquisa-aluno h3, .pesquisa-disciplina h3, .pesquisa-historico h3{
     color: #f42d2d;
     font-size: 20px;
+    font-weight: 500;
 }
 
-.pesquisa-aluno h1{
+.pesquisa-aluno h1, .pesquisa-disciplina h1, .pesquisa-historico h1{
     color: #333333;
     font-size: 35px;
     margin-top: -.3em;
@@ -148,29 +157,36 @@
     width: 1rem;
     height: 1rem;
 }
-  
-.aluno-container, .disciplina-container, .historico-container {
+
+.dados-alunos, .dados-disciplina, .dados-historico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aluno-details, .disciplinas-details, .historico-details {
     text-align: center;
     margin: 2em auto;
     padding: 20px;
     border: 2px solid #ccc;
     border-radius: 10px;
     max-width: 400px;
-}
-
-.aluno-info, .disciplina-info, .historico-info {
-    margin-top: 10px;
+    background-color: #fff;
 }
 
 .aluno-info h2, .disciplina-info h2, .historico-info h2 {
     color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.aluno-info ul, .disciplina-info ul, .historico-info ul {
+.aluno-info ul, .disciplina-info ul, .historico-info ul{
     list-style: none;
     padding: 0;
 }
 
-.aluno-info li, .disciplina-info li, .historico-info li {
+.aluno-info li, .disciplina-info li, .historico-info li{
     margin-bottom: 10px;
 }

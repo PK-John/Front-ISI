@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           const dado2Div = document.querySelector(".dado-1");
           dado2Div.innerHTML = `
             <i class='bx bxs-book-alt icon-dado1'></i>
-            <p class="info-text">Total de disciplinas:</p>
+            <p class="info-text">Total de Disciplinas:</p>
             <p class="quantidade-alunos">${quantidadeDisciplinas}</p>
           `;
         } catch (error) {
