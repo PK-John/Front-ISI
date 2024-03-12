@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (!isNaN(mediaGeral)) {
                         const valoresText2Container = document.querySelector('.valores-text-2');
                         const spanElement = valoresText2Container.querySelector('span');
-                        spanElement.textContent = mediaGeral.toFixed(2); // Ajuste para exibir apenas duas casas decimais
+                        spanElement.textContent = mediaGeral.toFixed(2);
                     } else {
                         console.error("Valor inválido para a média geral");
                     }

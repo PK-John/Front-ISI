@@ -55,9 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => {
                 const reprovacoesData = response.data;
     
-                // Verifique se a propriedade 'alunos_matriculados' existe e é um array
                 if (reprovacoesData && Array.isArray(reprovacoesData.alunos_matriculados)) {
-                    // Acesse a propriedade 'numero_de_alunos' no primeiro item do array
                     const numReprovacoes = reprovacoesData.alunos_matriculados[0]?.numero_de_alunos || 0;
                     displayMatriculadosCount(numReprovacoes);
                 } else {
@@ -88,12 +86,10 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => {
                 const mediaData = response.data;
     
-                // Verifique se a propriedade 'media_para_cada_disciplina' existe na resposta
                 if (mediaData && mediaData.media_para_cada_disciplina) {
                     const primeiraDisciplina = mediaData.media_para_cada_disciplina[0];
     
                     if (primeiraDisciplina && primeiraDisciplina.media) {
-                        // Acesse a propriedade 'media'
                         const mediaDosAlunos = parseFloat(primeiraDisciplina.media);
     
                         if (!isNaN(mediaDosAlunos)) {
@@ -132,20 +128,19 @@ document.addEventListener("DOMContentLoaded", function () {
             .get(apiUrl)
             .then(response => {
                 const reprovacoesData = response.data;
-    
-                // Verifique se a propriedade 'num_reprovacoes' existe na resposta
+
                 if (reprovacoesData && reprovacoesData.num_reprovacoes !== undefined) {
                     const numReprovacoes = reprovacoesData.num_reprovacoes;
                     displayReprovacoesCount(numReprovacoes);
                 } else {
                     console.error("A resposta da requisição não contém a propriedade 'num_reprovacoes'.", reprovacoesData);
-                    displayReprovacoesCount(0); // Define como 0 ou outra ação adequada quando 'num_reprovacoes' não está presente
+                    displayReprovacoesCount(0);
                 }
             })
             .catch(error => {
                 console.error(error);
                 console.error("Erro na requisição de reprovações da disciplina");
-                displayReprovacoesCount(0); // Define como 0 ou outra ação adequada em caso de erro
+                displayReprovacoesCount(0);
             });
     }
 

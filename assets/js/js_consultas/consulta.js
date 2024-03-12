@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function () {
-    // Função para fazer a requisição ao backend
+
     const fetchData = async (url) => {
       try {
         const response = await axios.get(url);
@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
       };
   
-    // Chamada da função ao carregar a página
     updateDado1();
     updateDado2();
   });
